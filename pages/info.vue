@@ -4,7 +4,7 @@
 
 <template>
   <div class="p-4">
-    我是首页！
+    我是信息界面！
   </div>
 </template>
 
