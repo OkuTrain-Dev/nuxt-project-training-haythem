@@ -27,12 +27,12 @@ const menuTitle = ref("Nuxt练习项目")
     </aside>
 
     <div class="h-full w-full bg-white flex flex-col">
-      <header class="w-full">
-        <div class="border-b border-gray-2 p-4 font-bold text-lg">
+      <header class="w-full h-60px">
+        <div class="h-full flex items-center border-b border-gray-2 p-4 font-bold text-lg">
           {{routeName}}
         </div>
       </header>
-      <main class="h-full">
+      <main class="h-[calc(100vh-60px)] overflow-y-auto">
         <NuxtPage/>
       </main>
     </div>
