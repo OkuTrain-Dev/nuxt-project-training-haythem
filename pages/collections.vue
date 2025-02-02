@@ -28,10 +28,10 @@ const handleTagsClick = (text: string) => {
 </script>
 
 <template>
-  <div class="h-full flex justify-center items-center w-full">
-    <NuxtImg class="w-full h-full object-cover" src="/images/84179374_p0.png" alt="bg"></NuxtImg>
+  <div class="h-full flex justify-center items-center">
+    <el-image class="w-full h-full fixed -z-9999" src="/images/84179374_p0.png" fit="cover"></el-image>
     <div
-        class="bg-white bg-op-70 backdrop-blur-md rounded-xl min-h-700px w-70% h-70% p-10 shadow-xl shadow-gray-6 shadow-op-20 fixed">
+        class="bg-white bg-op-70 backdrop-blur-md rounded-xl min-h-700px min-w-850px w-70% h-70% p-10 shadow-xl shadow-gray-6 shadow-op-20">
       <div class="font-bold text-2xl mb-4">Popular collections</div>
       <div class="flex mb-6">
         <div class="bg-white bg-op-50 rounded-xl p-2 mr-2 transition-colors hover:bg-op-100" v-for="item in tags"

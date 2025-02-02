@@ -7,8 +7,8 @@ const increment = () => {
 
 <template>
   <div class="h-full flex justify-center items-center w-full">
-    <NuxtImg class="w-full h-full object-cover" src="/images/64495434_p0.jpg" alt="bg"></NuxtImg>
-    <div class="bg-white bg-op-30 backdrop-blur-md rounded-md w-400px h-300px p-10 shadow-xl shadow-gray-5 shadow-op-50 fixed">
+    <el-image class="w-full h-full fixed -z-9999" src="/images/64495434_p0.jpg" fit="cover"></el-image>
+    <div class="bg-white bg-op-30 backdrop-blur-md rounded-md w-400px h-300px p-10 shadow-xl shadow-gray-5 shadow-op-50">
       <div class="px-10 text-2xl font-bold mb-2 text-center text-white">Counter</div>
       <div class="mb-10 text-white">
         Count: {{num}}
