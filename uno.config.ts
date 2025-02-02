@@ -1,7 +1,9 @@
-import {defineConfig, presetUno} from 'unocss'
+import {defineConfig, presetWind} from 'unocss'
 
 export default defineConfig({
     presets: [
-        presetUno(),
+        presetWind({
+            important: '#__nuxt',
+        })
     ],
 })
