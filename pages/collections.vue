@@ -31,14 +31,14 @@ const handleTagsClick = (text: string) => {
   <div class="h-full flex justify-center items-center w-full">
     <NuxtImg class="w-full h-full object-cover" src="/images/84179374_p0.png" alt="bg"></NuxtImg>
     <div
-        class="bg-white bg-op-70 backdrop-blur-md rounded-xl w-70% h-70% p-10 shadow-xl shadow-gray-6 shadow-op-20 fixed">
+        class="bg-white bg-op-70 backdrop-blur-md rounded-xl min-h-700px w-70% h-70% p-10 shadow-xl shadow-gray-6 shadow-op-20 fixed">
       <div class="font-bold text-2xl mb-4">Popular collections</div>
       <div class="flex mb-6">
         <div class="bg-white bg-op-50 rounded-xl p-2 mr-2 transition-colors hover:bg-op-100" v-for="item in tags"
              :key="item" @click="handleTagsClick(item)">{{ item }}
         </div>
       </div>
-      <div class="flex flex-wrap overflow-y-auto max-h-700px justify-center">
+      <div class="flex flex-wrap overflow-y-auto max-h-82% justify-center">
         <CollectionsCard v-for="item in collections" :key="item.id" :id="item.id" :title="item.title"
                          :likes="item.likes"
                          :img-src="itemImgPathPrefix+item.imgSrc || ''"></CollectionsCard>
