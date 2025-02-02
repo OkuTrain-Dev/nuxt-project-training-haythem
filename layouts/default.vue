@@ -1,9 +1,10 @@
 <script setup lang="ts">
 
-import {useNowRouteTitle, useRouteDefine} from "~/composables/useRouteParams";
+import {useNowRouteIcon, useNowRouteTitle, useRouteDefine} from "~/composables/useRouteParams";
 
 const routePathList = useRouteDefine()
 const routeName = useNowRouteTitle()
+const routeIcon = useNowRouteIcon()
 const route = useRoute()
 
 const menuTitle = ref("Nuxt练习项目")
@@ -33,7 +34,14 @@ const menuTitle = ref("Nuxt练习项目")
       <el-container>
         <el-header class="p-0 border-b border-gray-2 fixed w-full bg-white">
           <div class="h-full flex items-center p-4 font-bold text-lg">
-            {{ routeName }}
+            <div class="flex items-center">
+              <div class="mr-2" v-if="routeIcon !== undefined && routeIcon !== ''">
+                <el-icon class="text-xl flex items-center">
+                  <Component :is="routeIcon"/>
+                </el-icon>
+              </div>
+              <div>{{ routeName }}</div>
+            </div>
           </div>
         </el-header>
         <el-main class="p-0">
