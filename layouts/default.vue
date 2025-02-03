@@ -32,7 +32,7 @@ const menuTitle = ref("Nuxt练习项目")
         </div>
       </el-aside>
       <el-container>
-        <el-header class="p-0 border-b border-gray-2 fixed w-full bg-white">
+        <el-header class="p-0 border-b border-gray-2 w-full bg-white">
           <div class="h-full flex items-center p-4 font-bold text-lg">
             <div class="flex items-center">
               <div class="mr-2" v-if="routeIcon !== undefined && routeIcon !== ''">
